@@ -7,6 +7,7 @@
   >
     <slot
       :item="view.item"
+      :offset="view.offset"
       :index="view.nr.index"
       :active="view.nr.used"
     />
