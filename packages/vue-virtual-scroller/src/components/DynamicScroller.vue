@@ -11,12 +11,13 @@
     @resize="onScrollerResize"
     @visible="onScrollerVisible"
   >
-    <template #default="{ item: itemWithSize, index, active }">
+    <template #default="{ item: itemWithSize, index, active, offset }">
       <slot
         v-bind="{
           item: itemWithSize.item,
           index,
           active,
+          offset,
           itemWithSize
         }"
       />
